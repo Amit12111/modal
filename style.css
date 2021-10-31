@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    rgb(57, 160, 160),
+    white,
+    rgb(255, 200, 97)
+  );
+}
+.btns {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn {
+  height: 3.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border-style: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  background: rgb(247, 223, 90);
+}
+.modal1 {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.507);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  transition: animation 1s ease-in-out;
+  animation-name: modal;
+  animation-duration: 1s;
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modalcontent {
+  background-color: orange;
+  height: 20rem;
+  width: 30rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+.header {
+  padding: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.closebtn {
+  padding: 1rem;
+  float: right;
+  cursor: pointer;
+}
+.content {
+  text-align: justify;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+footer {
+  text-align: center;
+  font-size: 2rem;
+}
